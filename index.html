@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <h3 style="font-family: Verdana; color: white; font-size: 40px; margin-bottom: 1px; " id="scorelineH">HOME</h3>
+                <div class="score">
+                    <h2 class ="scoreText" id="home-pts">0</h2>
+                </div>
+                
+                <div>
+                    <button id="one-pts" onclick="addHomePoint()" >+1</button>
+                    <button id="two-pts" onclick="addHomeTwoPoint()">+2</button>
+                    <button id="three-pts" onclick="addHomeThreePoint()">+3</button>
+                </div>
+            </div>
+            <div class="column">
+                <h3 style="font-family: Verdana; color: white; font-size: 40px; margin-bottom: 1px; " id="scorelineG">GUEST</h3>
+                <div class="score">  
+                    <h2 class ="scoreText" id="guest-pts">0</h2>
+                </div>
+              
+                <div>
+                    <button id="one-pts" onclick="addGuestPoint()">+1</button>
+                    <button id="two-pts" onclick="addGuestTwoPoint()">+2</button>
+                    <button id="three-pts" onclick= "addGuestTwoPoint()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button style ="width: 140px; margin: 20px;" onclick="resetScores()">new game</button>
+        <script src="index.js"></script>
+    </body>
+</html>
